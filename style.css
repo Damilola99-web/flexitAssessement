@@ -36,8 +36,6 @@ body {
 
 .contents {
   width: 100%;
-  display: -ms-grid;
-  display: grid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,14 +447,16 @@ body {
 
 @media (max-width: 800px) {
   .input {
-    width: calc(90% - 40px);
+    width: calc(90% - 60px);
   }
   input {
     width: 100% !important;
+    height: 30px !important;
   }
   .maintab {
-    padding: 30px;
+    padding: 10px;
     width: 100%;
+    margin: 0;
   }
   .maintab .dashboard {
     width: 100%;
@@ -467,7 +467,9 @@ body {
   .maintab .dashboard .inpAtog {
     width: 100%;
   }
-  .content {
+  .contents {
+    padding-left: 10px;
+    margin-top: 30px !important;
     width: 100%;
     display: -ms-grid !important;
     display: grid !important;
@@ -475,8 +477,29 @@ body {
         grid-template-columns: 1fr 1fr 1fr !important;
     grid-gap: 1rem !important;
   }
-  .content img {
-    width: calc(33% - 1rem) !important;
+  .contents img {
+    width: calc(100% - 1rem) !important;
+    margin: 0;
+  }
+  .side {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .contents {
+    padding-left: 10px;
+    margin-top: 30px !important;
+    width: 100%;
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    grid-gap: 1rem !important;
+  }
+  .contents img {
+    width: calc(100% - 1rem) !important;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
